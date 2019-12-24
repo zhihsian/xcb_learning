@@ -28,8 +28,8 @@ int main() {
     xcb_window_t window = xcb_generate_id(conn);
 
     mask = XCB_CW_BACK_PIXEL | XCB_CW_EVENT_MASK;
-    values[0] = screen->white_pixel;
-    values[1] = XCB_EVENT_MASK_EXPOSURE;
+    values[0] = screen->white_pixel;     // 窗口使用白色北京
+    values[1] = XCB_EVENT_MASK_EXPOSURE; // 接收 exposure 事件
 
     xcb_create_window(conn,
                       XCB_COPY_FROM_PARENT,
@@ -52,7 +52,7 @@ int main() {
     xcb_gcontext_t foreground = xcb_generate_id(conn);
 
     mask = XCB_GC_FOREGROUND | XCB_GC_GRAPHICS_EXPOSURES;
-    values[0] = screen->black_pixel;
+    values[0] = screen->black_pixel; // 使用黑色作爲前景色
     values[1] = 0;
 
     xcb_create_gc(conn, foreground, screen->root, mask, values);
