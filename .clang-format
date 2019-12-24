@@ -1,0 +1,32 @@
+---
+Language: Cpp
+BasedOnStyle: LLVM
+
+IndentWidth: 4
+AccessModifierOffset: -4
+ContinuationIndentWidth: 8
+
+AlignAfterOpenBracket: Align
+AlignOperands: true
+PointerAlignment: Right
+DerivePointerAlignment: false
+
+AllowShortFunctionsOnASingleLine: InlineOnly
+
+BinPackArguments: false
+BinPackParameters: false
+
+AllowAllArgumentsOnNextLine: false
+AllowAllConstructorInitializersOnNextLine: false
+AllowAllParametersOfDeclarationOnNextLine: false
+
+AllowShortIfStatementsOnASingleLine: WithoutElse
+AllowShortIfStatementsOnASingleLine: true
+
+AlwaysBreakTemplateDeclarations: Yes
+
+ConstructorInitializerIndentWidth: 4
+BreakConstructorInitializers: BeforeComma
+
+SpacesBeforeTrailingComments: 1
+...
